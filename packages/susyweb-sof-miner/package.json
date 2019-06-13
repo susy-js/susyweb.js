@@ -1,0 +1,36 @@
+{
+    "name": "susyweb-sof-miner",
+    "namespace": "sophon",
+    "version": "1.0.0-beta.55",
+    "description": "SusyWeb module to interact with the Sophon blockchain accounts stored in the node.",
+    "repository": "https://octonion.institute/susy-js/susyweb.js/tree/1.0/packages/susyweb-sof-miner",
+    "license": "LGPL-3.0",
+    "main": "dist/susyweb-sof-miner.cjs.js",
+    "module": "dist/susyweb-sof-miner.esm.js",
+    "browser": "dist/susyweb-sof-miner.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "types": "types/index.d.ts",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "susyweb-core": "1.0.0-beta.55",
+        "susyweb-core-helpers": "1.0.0-beta.55",
+        "susyweb-core-method": "1.0.0-beta.55",
+        "susyweb-net": "1.0.0-beta.55",
+        "susyweb-providers": "1.0.0-beta.55",
+        "susyweb-utils": "1.0.0-beta.55"
+    },
+    "devDependencies": {
+        "definitelytyped-header-parser": "^1.0.1",
+        "dtslint": "0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "37347fd46344f45d1c57104920bdda0779f0d51c"
+}

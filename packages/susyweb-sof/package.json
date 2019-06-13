@@ -1,0 +1,45 @@
+{
+    "name": "susyweb-sof",
+    "namespace": "sophon",
+    "version": "1.0.0-beta.55",
+    "description": "SusyWeb module to interact with the Sophon blockchain and smart contracts.",
+    "repository": "https://octonion.institute/susy-js/susyweb.js/tree/1.0/packages/susyweb-sof",
+    "license": "LGPL-3.0",
+    "main": "dist/susyweb-sof.cjs.js",
+    "module": "dist/susyweb-sof.esm.js",
+    "browser": "dist/susyweb-sof.umd.js",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext"
+    },
+    "types": "types/index.d.ts",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "sophonjs-tx": "^1.3.7",
+        "rxjs": "^6.4.0",
+        "susyweb-core": "1.0.0-beta.55",
+        "susyweb-core-helpers": "1.0.0-beta.55",
+        "susyweb-core-method": "1.0.0-beta.55",
+        "susyweb-core-subscriptions": "1.0.0-beta.55",
+        "susyweb-sof-abi": "1.0.0-beta.55",
+        "susyweb-sof-accounts": "1.0.0-beta.55",
+        "susyweb-sof-contract": "1.0.0-beta.55",
+        "susyweb-sof-ens": "1.0.0-beta.55",
+        "susyweb-sof-iban": "1.0.0-beta.55",
+        "susyweb-sof-personal": "1.0.0-beta.55",
+        "susyweb-net": "1.0.0-beta.55",
+        "susyweb-providers": "1.0.0-beta.55",
+        "susyweb-utils": "1.0.0-beta.55"
+    },
+    "devDependencies": {
+        "definitelytyped-header-parser": "^1.0.1",
+        "dtslint": "0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts"
+    ],
+    "gitHead": "37347fd46344f45d1c57104920bdda0779f0d51c"
+}

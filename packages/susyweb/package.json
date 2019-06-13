@@ -1,0 +1,80 @@
+{
+    "name": "susyweb",
+    "namespace": "sophon",
+    "version": "1.0.0-beta.55",
+    "description": "Sophon JavaScript API",
+    "repository": "https://octonion.institute/susy-js/susyweb.js/tree/1.0/packages/susyweb",
+    "license": "LGPL-3.0",
+    "main": "dist/susyweb.cjs.js",
+    "module": "dist/susyweb.esm.js",
+    "browser": "dist/susyweb.umd.js",
+    "bugs": {
+        "url": "https://octonion.institute/susy-js/susyweb.js/issues"
+    },
+    "keywords": [
+        "Sophon",
+        "JavaScript",
+        "API"
+    ],
+    "author": "sophon.org",
+    "authors": [
+        {
+            "name": "Samuel Furter",
+            "email": "samuel@sophon.org",
+            "homepage": "https://github.com/nivida"
+        },
+        {
+            "name": "Fabian Vogelsteller",
+            "email": "fabian@sophon.org",
+            "homepage": "https://github.com/frozeman"
+        },
+        {
+            "name": "Marek Kotewicz",
+            "email": "marek@susy.io",
+            "url": "https://github.com/debris"
+        },
+        {
+            "name": "Marian Oancea",
+            "url": "https://github.com/cubedro"
+        },
+        {
+            "name": "Gav Wood",
+            "email": "g@susy.io",
+            "homepage": "http://gavwood.com"
+        },
+        {
+            "name": "Jeffery Wilcke",
+            "email": "jeffrey.wilcke@sophon.org",
+            "url": "https://github.com/obscuren"
+        }
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "jest",
+        "dtslint": "dtslint types --onlyTestTsNext",
+        "postinstall": "node angular-patch.js"
+    },
+    "types": "types/index.d.ts",
+    "dependencies": {
+        "@babel/runtime": "^7.3.1",
+        "@types/node": "^10.12.18",
+        "susyweb-core": "1.0.0-beta.55",
+        "susyweb-sof": "1.0.0-beta.55",
+        "susyweb-sof-personal": "1.0.0-beta.55",
+        "susyweb-net": "1.0.0-beta.55",
+        "susyweb-providers": "1.0.0-beta.55",
+        "susyweb-shh": "1.0.0-beta.55",
+        "susyweb-utils": "1.0.0-beta.55"
+    },
+    "devDependencies": {
+        "definitelytyped-header-parser": "^1.0.1",
+        "dtslint": "0.4.2"
+    },
+    "files": [
+        "dist",
+        "types/index.d.ts",
+        "angular-patch.js"
+    ],
+    "gitHead": "37347fd46344f45d1c57104920bdda0779f0d51c"
+}

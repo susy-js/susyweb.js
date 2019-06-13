@@ -1,0 +1,1 @@
+.. note:: This documentation is under construction and the susyweb.js 1.0 stable version isn't released. If your using a version v0.x.x of susyweb.js then please have a look at `octonion.institute/susy-go/wiki/wiki/JavaScript-API <https://octonion.institute/susy-go/wiki/wiki/JavaScript-API>`_.
