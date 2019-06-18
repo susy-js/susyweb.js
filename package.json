@@ -1,0 +1,115 @@
+{
+  "_from": "susyweb@0.17.0-beta",
+  "_id": "susyweb@0.17.0-beta",
+  "_inBundle": false,
+  "_integrity": "sha1-V684JFv/ejIJn3zleA+tW7wA2ls=",
+  "_location": "/susyweb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "susyweb@0.17.0-beta",
+    "name": "susyweb",
+    "escapedName": "susyweb",
+    "rawSpec": "0.17.0-beta",
+    "saveSpec": null,
+    "fetchSpec": "0.17.0-beta"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/susyweb/-/susyweb-0.17.0-beta.tgz",
+  "_shasum": "57af38245bff7a32099f7ce5780fad5bbc00da5b",
+  "_spec": "susyweb@0.17.0-beta",
+  "_where": "/home/user",
+  "author": {
+    "name": "sofdev.com"
+  },
+  "authors": [
+    {
+      "name": "Marek Kotewicz",
+      "email": "marek@sofdev.com",
+      "url": "https://github.com/debris"
+    },
+    {
+      "name": "Fabian Vogelsteller",
+      "email": "fabian@sofdev.com",
+      "homepage": "http://frozeman.de"
+    },
+    {
+      "name": "Marian Oancea",
+      "email": "marian@sofdev.com",
+      "url": "https://github.com/cubedro"
+    },
+    {
+      "name": "Gav Wood",
+      "email": "g@sofdev.com",
+      "homepage": "http://gavwood.com"
+    },
+    {
+      "name": "Jeffery Wilcke",
+      "email": "jeff@sofdev.com",
+      "url": "https://github.com/obscuren"
+    }
+  ],
+  "browser": {
+    "xmlhttprequest": "./lib/utils/browser-xhr.js"
+  },
+  "bugs": {
+    "url": "https://octonion.institute/susy-js/susyweb.js/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bignumber.js": "git+https://github.com/debris/bignumber.js.git#94d7146671b9719e00a09c29b01a691bc85048c2",
+    "crypto-js": "^3.1.4",
+    "utf8": "^2.1.1",
+    "xmlhttprequest": "*"
+  },
+  "deprecated": false,
+  "description": "Sophon JavaScript API, middleware to talk to a sophon node over RPC",
+  "devDependencies": {
+    "bower": ">=1.4.1",
+    "browserify": ">=10.0",
+    "chai": "^3.0.0",
+    "coveralls": "^2.11.2",
+    "del": ">=2.0.2",
+    "exorcist": "^0.4.0",
+    "gulp": ">=3.9.0",
+    "gulp-jshint": ">=1.5.0",
+    "gulp-rename": ">=1.2.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": ">=1.2.0",
+    "istanbul": "^0.4.4",
+    "jshint": ">=2.5.0",
+    "mocha": ">=2.3.3",
+    "sandboxed-module": "^2.0.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "homepage": "https://octonion.institute/susy-js/susyweb.js",
+  "keywords": [
+    "sophon",
+    "javascript",
+    "API"
+  ],
+  "license": "LGPL-3.0",
+  "main": "./index.js",
+  "name": "susyweb",
+  "namespace": "sophon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://octonion.institute/susy-js/susyweb.js.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "lint": "jshint *.js lib",
+    "test": "mocha",
+    "test-coveralls": "istanbul cover _mocha -- -R spec && cat coverage/lcov.info | coveralls --verbose",
+    "watch": "gulp watch"
+  },
+  "version": "0.17.0-beta"
+}
